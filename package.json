@@ -1,0 +1,21 @@
+{
+  "name": "idea-miner",
+  "version": "1.0.0",
+  "description": "AI-Powered Opportunity Discovery Engine",
+  "scripts": {
+    "dev:server": "npm.cmd --prefix server run dev",
+    "dev:client": "npm.cmd --prefix client run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,magenta\" \"npm.cmd --prefix server run dev\" \"npm.cmd --prefix client run dev\"",
+    "build:server": "npm.cmd --prefix server run build",
+    "build:client": "npm.cmd --prefix client run build",
+    "build": "npm.cmd --prefix server run build && npm.cmd --prefix client run build",
+    "start": "npm.cmd --prefix server run start",
+    "test": "npm.cmd --prefix server run test"
+  },
+  "keywords": ["ai", "startup", "opportunity-discovery", "gemini", "serpapi"],
+  "author": "Idea Miner Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
